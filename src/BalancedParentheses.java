@@ -21,6 +21,8 @@ public class BalancedParentheses {
         // } else {
         //     stack.push(str.charAt(0));
         // }
+        
+        // O(n)
         for(int i = 0; i < str.length(); i++) {
             if(stack.empty() && str.charAt(i) == ')') {
                 return false;

@@ -27,6 +27,7 @@ public class BalancedBrackets {
         // List<Character> charsList = Arrays.asList(chars);
         Stack<Character> stack = new Stack<>();
 
+        // O(n)
         for(int i = 0; i < str.length(); i++) {
             if(charsList.contains(str.charAt(i))) {
                 if(stack.empty()) {
@@ -37,7 +38,6 @@ public class BalancedBrackets {
                     stack.push(str.charAt(i));
                 }
             }
-
         }
         return stack.empty();
     }
