@@ -1,0 +1,63 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "Java_Unit5_11a0cfb9"
+        },
+        {
+            "type": "java",
+            "name": "BalancedBrackets",
+            "request": "launch",
+            "mainClass": "BalancedBrackets",
+            "projectName": "Java_Unit5_11a0cfb9"
+        },
+        {
+            "type": "java",
+            "name": "BalancedParentheses",
+            "request": "launch",
+            "mainClass": "BalancedParentheses",
+            "projectName": "Java_Unit5_11a0cfb9"
+        },
+        {
+            "type": "java",
+            "name": "NonTestingMissingNumber",
+            "request": "launch",
+            "mainClass": "NonTestingMissingNumber",
+            "projectName": "Java_Unit5_11a0cfb9"
+        },
+        {
+            "type": "java",
+            "name": "Recursion",
+            "request": "launch",
+            "mainClass": "Recursion",
+            "projectName": "Java_Unit5_11a0cfb9"
+        },
+        {
+            "type": "java",
+            "name": "SortingAlgo",
+            "request": "launch",
+            "mainClass": "SortingAlgo",
+            "projectName": "Java_Unit5_11a0cfb9"
+        },
+        {
+            "type": "java",
+            "name": "SumTwoLinkedList",
+            "request": "launch",
+            "mainClass": "SumTwoLinkedList",
+            "projectName": "Java_Unit5_11a0cfb9"
+        }
+    ]
+}

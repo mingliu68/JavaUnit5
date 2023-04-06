@@ -1,6 +1,7 @@
 
 public class App {
     public static void main(String[] args) throws Exception {
+        
         CustomStack cStack = new CustomStack(10);
         System.out.println(cStack.isEmpty());
         System.out.println(cStack.peek());

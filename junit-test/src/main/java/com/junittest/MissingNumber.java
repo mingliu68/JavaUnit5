@@ -1,9 +1,11 @@
+package com.junittest;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class MissingNumber {
-    public static void main(String[] args) {
+    public void main(String[] args) {
         int[] nums1 = {2, 1, 4, 3, 6, 5, 7, 10, 9};
         int[] nums2 = {2, 1, 4, 3, 6, 5, 7, 8, 10, 11};
         System.out.println(findMissingNumber_N(nums1, 10));
@@ -16,7 +18,7 @@ public class MissingNumber {
         System.out.println(findMissingNumber_N_1(nums2, 11));
     }
 
-    public static int findMissingNumber_N(int[] nums, int maxNum) {
+    public int findMissingNumber_N(int[] nums, int maxNum) {
         // Solving in O(n) time, reducing runtime
 
         Integer[] orderedNums = new Integer[maxNum];
@@ -32,7 +34,7 @@ public class MissingNumber {
         return result;
     }
 
-    public static int findMissingNumber_NLOGN(int[] nums, int maxNum) {
+    public int findMissingNumber_NLOGN(int[] nums, int maxNum) {
         // solving without using additional memory usage
         
         // java sort function O(n log n)
@@ -45,7 +47,7 @@ public class MissingNumber {
         return 0;
     }
 
-    public static int findMissingNumber_N_1(int[] nums, int maxNum) {
+    public int findMissingNumber_N_1(int[] nums, int maxNum) {
         // solve in O(n) runtime and O(1) runspace
         int fullSum = maxNum % 2 == 0 ? (int)((double)((maxNum / 2) + 0.5) * maxNum) : (int)((double)((maxNum / 2) + 1) * maxNum);
         // System.out.println(fullSum);
@@ -56,3 +58,4 @@ public class MissingNumber {
         return fullSum;
     }
 }
+
