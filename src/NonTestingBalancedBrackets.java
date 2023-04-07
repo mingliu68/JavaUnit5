@@ -1,28 +1,29 @@
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Stack;
 
-public class BalancedBrackets {
+public class NonTestingBalancedBrackets {
     public static void main(String[] args) {
 
-        Character[] chars = {'(' , ')' , '{' , '}' , '<', '>', '[', ']'};
-        List<Character> charsList = Arrays.asList(chars);
+
 
         String str1 = "({aba}())";
         String str2 = "((([c]))<>)))(a)))";
         String str3 = "(a)<";
         String str4 = ",,,,>><<";
 
-        System.out.println(isBalanced(str1, charsList));
-        System.out.println(isBalanced(str2, charsList));
-        System.out.println(isBalanced(str3, charsList));
-        System.out.println(isBalanced(str4, charsList));
+        System.out.println(isBalanced(str1));
+        System.out.println(isBalanced(str2));
+        System.out.println(isBalanced(str3));
+        System.out.println(isBalanced(str4));
 
 
     }
 
-    public static Boolean isBalanced(String str, List<Character> charsList) {
+    private static Character[] chars = {'(' , ')' , '{' , '}' , '<', '>', '[', ']'};
+    private static List<Character> charsList = Arrays.asList(chars);
+
+    public static Boolean isBalanced(String str) {
         // Character[] chars = {'(' , ')' , '{' , '}' , '<', '>', '[', ']'};
         // List<Character> charsList = Arrays.asList(chars);
         Stack<Character> stack = new Stack<>();

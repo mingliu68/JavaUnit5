@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "NonTestingBalancedBrackets",
+            "request": "launch",
+            "mainClass": "NonTestingBalancedBrackets",
+            "projectName": "Java_Unit5_11a0cfb9"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
