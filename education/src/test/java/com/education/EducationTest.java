@@ -132,15 +132,15 @@ public class EducationTest
         List<String> classes = educationBusinessImpl.getClassesByInstructor("Peter");
 
 
-        for(Instructor instructor : instructors) {
-            System.out.println(instructor.getName() + ", " + instructor.getClasses());
-        }
+        // for(Instructor instructor : instructors) {
+        //     System.out.println(instructor.getName() + ", " + instructor.getClasses());
+        // }
         
-        for(String className : classes) {
-            System.out.println(className);
-        }
+        // for(String className : classes) {
+        //     System.out.println(className);
+        // }
 
-        System.out.println(classes.size());
+        // System.out.println(classes.size());
 
         //Then
         assertThat(instructorDataObjectMock.getAllInstructors().size(), is(3));
